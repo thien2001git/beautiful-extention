@@ -1,0 +1,1 @@
+export const weatherKey = '3d4536c55fefa30aa5c6b8e247de03b3';

@@ -1,0 +1,99 @@
+@font-face {
+  font-family: "patrick hand";
+  src: url("../font/PatrickHand-Regular.ttf");
+}
+
+body {
+  margin: 0 auto;
+  box-sizing: border-box;
+  font-family: "patrick hand";
+  min-height: 400px;
+}
+.main {
+  width: 400px;
+  margin: 0 auto;
+  height: 100%;
+}
+.main .content {
+  width: 92%;
+  margin: 0 auto;
+  max-height: 320px;
+  height: 320px;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+.main .content ul {
+  margin: 0;
+  padding: 0;
+  margin-top: 30px;
+}
+.main .content ul li {
+  list-style: none;
+  font-size: 18px;
+  margin: 12px 0;
+  width: 100%;
+}
+.main .content ul li.right {
+  text-align: right;
+  margin-right: 7px;
+}
+.main .content ul li.right span {
+  margin-right: 5px;
+}
+.main .content ul li span {
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  border-radius: 15px;
+  padding: 3px 7px;
+  display: inline-block;
+  max-width: 86%;
+}
+.voice-input {
+  width: 100%;
+}
+.voice-input .microphone {
+  width: 100%;
+  text-align: center;
+  display: inline-block;
+  font-size: 22px;
+  margin-top: 20px;
+}
+.voice-input .microphone .speaking-time {
+  color: #00e0f0;
+  animation-name: speaking;
+  animation-duration: 0.5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  cursor: pointer;
+}
+
+.img-icon {
+  margin-top: 3px;
+  margin-right: 3px;
+}
+/* More css */
+@keyframes speaking {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0.5;
+  }
+}
+.fa-circle-nodes {
+  color: #71dfe7;
+}
+.fa-microphone {
+  cursor: pointer;
+}
+::-webkit-scrollbar {
+  width: 3px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
