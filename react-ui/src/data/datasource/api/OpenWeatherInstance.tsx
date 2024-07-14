@@ -1,10 +1,15 @@
 import axios from 'axios'
 
-const OpenWeatherInstance = axios.create({
-    baseURL: "https://cors-anywhere.herokuapp.com/https://api.openweathermap.org/geo/1.0/",
+export const OpenWeatherInstance_1_0 = axios.create({
+    baseURL: "https://api.openweathermap.org/geo/1.0",
     headers:{
         "Content-Type" : "application/json",
     }
 });
 
-export default OpenWeatherInstance
+export const OpenWeatherInstance_2_5 = axios.create({
+    baseURL: "https://api.openweathermap.org/data/2.5",
+    headers:{
+        "Content-Type" : "application/json",
+    }
+});

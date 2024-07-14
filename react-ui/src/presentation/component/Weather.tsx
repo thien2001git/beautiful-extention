@@ -36,6 +36,7 @@ class Weather extends React.Component<{}, { location: Location }> {
             weartherRepository.getReverse(latitude, longitude, weartherCallBack)
 
             weartherRepository.oneCall(latitude, longitude)
+            weartherRepository.wearther(latitude, longitude)
             
             // httpRequestAsync(searchLink, weatherInfo);
             var searchLink = `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${weatherKey}&lang=vi`;
